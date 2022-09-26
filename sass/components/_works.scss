@@ -1,0 +1,46 @@
+.work {
+    padding-bottom: 94px;
+
+    @media screen and (min-width: 1200px) {
+            display: block;
+        }
+}
+
+.work__title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+    margin-bottom: 50px;
+}
+
+.work__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.work__box {
+    position: relative;
+}
+
+.work__text {
+    background: rgba(47, 48, 58, 0.8);
+    color: var(--white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+
+    display: flex;
+    min-width: 100%;
+    min-height: 70px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+    position: absolute;
+    bottom: 0;
+}

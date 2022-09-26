@@ -1,0 +1,25 @@
+:root {
+    --main-color-text: #212121;
+    --secondary-color-text: #757575;
+    --white-color: #ffffff;
+    --bgc-gray: #2f303a;
+    --accent: #2196f3;
+    --secondary-bgc: #f5f4fa;
+    --logo-color: #000000;
+    --link-color: rgba(255, 255, 255, 0.6);
+    --button-color: #188ce8;
+    --button-shadow: rgba(0, 0, 0, 0.15);
+    --header-border-color: #ececec;
+    --portfolio-border: #eeeeee;
+    --icon-color: #afb1b8;
+    --cubic-style: cubic-bezier(0.4, 0, 0.2, 1);
+    --backdrop-bgc: rgba(0, 0, 0, 0.2);
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: var(--white-color);
+    color: var(--main-color-text);
+    letter-spacing: 0.03em;
+}
