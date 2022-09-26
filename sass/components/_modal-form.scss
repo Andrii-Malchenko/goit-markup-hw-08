@@ -7,7 +7,7 @@
     .modal-text {
         margin-bottom: 12px;
 
-        font-weight: $basic-weight;
+        font-weight: 700;
         font-size: 20px;
         line-height: 1.5;
         text-align: center;
@@ -106,7 +106,7 @@
     color: var(--secondary-color-text);
 
 @media screen and (min-width: 1200px) {
-        font-size: $basic-font-size;
+        font-size: 14px;
         line-height: 1.71;
     }
 }
@@ -181,16 +181,16 @@
 }
 
 .form-box {
-    margin-left: 93px;
-
     @media screen and (max-width: 1199px) {
             text-align: center;
         }
+    @media screen and (min-width: 1200px){
+    margin-left: 93px;
+}
 }
 
 .sign-up-form {
-    align-items: flex-end;
-
+    align-items: flex-end;    
     @media screen and (min-width: 768px) {
             display: flex;
         }
@@ -221,9 +221,10 @@
     display: block;
     transition: border 250ms var(--cubic-style);
 
+    width: 100%;
     padding: 15px 16px;
     height: 50px;
-    width: 358px;
+
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -237,6 +238,13 @@
     line-height: 1.25;
 
     color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 768px){
+    width: 450px;
+}
+@media screen and (min-width: 1200px){
+    width: 358px;
 }
 
 &:focus {

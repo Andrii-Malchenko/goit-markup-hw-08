@@ -27,14 +27,12 @@
           >
           <ul class="menu list">
             <li class="menu__item">
-              <a class="menu__link link" href="./index.html"
+              <a class="menu__link link current" href="./index.html"
                 ><span>Студія</span></a
               >
             </li>
             <li class="menu__item">
-              <a class="menu__link link current" href="./portfolio.html"
-                >Портфоліо</a
-              >
+              <a class="menu__link link" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="menu__item">
               <a class="menu__link link" href="#contact">Контакти</a>
@@ -60,6 +58,63 @@
             </a>
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle__icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-menu_40"></use>
+          </svg>
+        </button>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg width="40" height="40">
+              <use href="./images/sprite.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+              <a
+                href="./index.html"
+                class="mobile-menu__link mobile-menu__link--current"
+                >Студія</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a href="./portfolio.html" class="mobile-menu__link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mobile-contacts">
+            <li>
+              <a href="tel:+380961111111" class="mobile-contacts__link"
+                >+38 096 111 11 11
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mobile-contacts__link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-social-web">
+            <li class="mobile-social-web__item">
+              <a class="mobile-social-web__link" href="#">Instagram</a>
+            </li>
+            <li class="mobile-social-web__item">
+              <a class="mobile-social-web__link" href="#">Twitter</a>
+            </li>
+            <li class="mobile-social-web__item">
+              <a class="mobile-social-web__link" href="#">Facebook</a>
+            </li>
+            <li class="mobile-social-web__item">
+              <a class="mobile-social-web__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- main -->
@@ -402,13 +457,13 @@
     <!-- Footer -->
     <footer class="footer" id="contact">
       <div class="container footer-box">
-        <div>
+        <div class="footer-container">
           <a class="footer__logo" href="./index.html"
             ><span class="web-logo">Web</span>Studio</a
           >
           <address class="adress">
             <ul>
-              <li class="adress-map">
+              <li class="adress__map">
                 <a
                   href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
                   target="_blank"
@@ -416,7 +471,7 @@
                   ><span class="site">г. Киев, пр-т Леси Украинки, 26</span>
                 </a>
               </li>
-              <li class="adress-mail">
+              <li class="adress__mail">
                 <a
                   class="footer-mail"
                   href="mailto:info@devstudio.com"
@@ -468,15 +523,13 @@
         <div class="form-box">
           <p class="sign-up-title">Підпишіться на розсилку</p>
           <form class="sign-up-form">
-            <label
-              ><input
-                class="form-email"
-                type="email"
-                name="mail"
-                placeholder="E-mail"
-                id="footer-mail"
-              />
-            </label>
+            <input
+              class="form-email"
+              type="email"
+              name="mail"
+              placeholder="E-mail"
+              id="footer-mail"
+            />
 
             <button class="form-btn" type="submit">
               Підписатися

@@ -91,12 +91,12 @@
 
 .footer-social-web {
     display: flex;
+    justify-content: center;
     column-gap: 10px;
 }
 
 .social-web-content {
     display: block;
-    margin-left: 70px;
 
     @media screen and (max-width: 767px) {
             margin-bottom: 60px;
@@ -126,9 +126,6 @@
 }
 
 .footer-box {
-    display: flex;
-    align-items: baseline;
-    
     @media screen and (min-width: 768px) {
             display: flex;
     
@@ -196,6 +193,7 @@
     outline: none;
 }
 }
+
 
 .form-btn {
     border: none;

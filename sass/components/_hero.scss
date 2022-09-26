@@ -5,7 +5,7 @@
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/bg.jpg);
-    background-size: 1600px 600px;
+    background-size: 480px;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -16,8 +16,6 @@
                     rgba(47, 48, 58, 0.4)),
                 url('../images/mobile-images/hero-mobile-960.jpg');
         }
-    
-        @media screen and (min-width: 480px) {}
 }
 
 @media screen and (min-width: 768px) {
@@ -66,7 +64,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
-    width: 670px;
+    max-width: 670px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
@@ -75,7 +73,6 @@
             font-size: 44px;
             line-height: 1.36;
     
-            max-width: 670px;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 30px;

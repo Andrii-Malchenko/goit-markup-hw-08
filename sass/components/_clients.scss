@@ -20,7 +20,7 @@
 .clients-list {
     display: flex;
     justify-content: center;
-    column-gap: 30px;
+    gap: 30px;
 
     @media screen and (max-width: 1199px) {
             flex-wrap: wrap;
@@ -47,7 +47,7 @@
 
 
 .clients-list__link {
-    width: 170px;
+    max-width: 210px;
     height: 92px;
     color: var(--icon-color);
     fill: currentColor;
@@ -64,8 +64,16 @@
     color: var(--accent);
     border-color: var(--accent);
 }
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+    }
+    @media screen and (min-width: 1200px){
+        width: 170px;
+    }
 }
 
 .clients-list__icon {
     fill: currentColor;
+
 }
