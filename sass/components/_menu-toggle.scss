@@ -3,10 +3,13 @@
     background-color: var(--white-color);
     fill: currentColor;
 
+    border: none;
+
     padding-top: 10px;
     padding-bottom: 10px;
 
     transition: color 250ms var(--cubic-style);
+
 
     &:hover,
     &:focus {
