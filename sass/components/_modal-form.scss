@@ -125,7 +125,7 @@
         &::after {
             content: ' ';
             left: 0;
-            bottom: 5px;
+            bottom: 2px;
             position: absolute;
             height: 1px;
             width: 100%;
@@ -164,7 +164,7 @@
     font-size: 11px;
 
     @media screen and (max-width: 479px) {
-        font-size: 8px;
+        font-size: 6px;
     }
 }
 
